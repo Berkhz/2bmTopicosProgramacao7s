@@ -1,9 +1,9 @@
-package service;
+package com.jwt.prova.service;
 
-import model.User;
+import com.jwt.prova.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.UserRepository;
+import com.jwt.prova.repository.UserRepository;
 
 import java.util.List;
 import java.util.Optional;

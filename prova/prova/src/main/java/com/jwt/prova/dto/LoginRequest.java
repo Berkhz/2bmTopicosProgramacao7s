@@ -1,4 +1,4 @@
-package dto;
+package com.jwt.prova.dto;
 
 import lombok.Data;
 

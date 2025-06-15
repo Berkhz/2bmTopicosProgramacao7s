@@ -1,13 +1,13 @@
-package controller;
+package com.jwt.prova.controller;
 
-import dto.LoginRequest;
-import dto.RegisterRequest;
+import com.jwt.prova.dto.LoginRequest;
+import com.jwt.prova.dto.RegisterRequest;
 import lombok.RequiredArgsConstructor;
-import model.User;
+import com.jwt.prova.model.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import security.JWTUtil;
-import service.UserService;
+import com.jwt.prova.security.JWTUtil;
+import com.jwt.prova.service.UserService;
 
 @RestController
 @RequestMapping("/auth")

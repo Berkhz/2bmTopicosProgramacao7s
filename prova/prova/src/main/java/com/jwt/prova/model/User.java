@@ -1,9 +1,10 @@
-package model;
+package com.jwt.prova.model;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
+@Table(name = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
