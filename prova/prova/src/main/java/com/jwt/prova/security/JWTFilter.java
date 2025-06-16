@@ -40,7 +40,7 @@ public class JWTFilter extends OncePerRequestFilter {
                 User user = userService.findByEmail(email).orElse(null);
                 if (user != null) {
                     var auth = new UsernamePasswordAuthenticationToken(
-                            user, null, List.of(new SimpleGrantedAuthority(user.getRole()))
+                            user, null, List.of(new SimpleGrantedAuthority("ROLE_" + user.getRole().toUpperCase()))
                     );
                     SecurityContextHolder.getContext().setAuthentication(auth);
                 }
